@@ -551,6 +551,7 @@ footer
   @include mq(600px)
   {
     max-height: 750px;
+    max-width: 560px;
   }
 
   @include mq(2000px)

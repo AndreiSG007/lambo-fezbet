@@ -10,7 +10,6 @@
     "thePromotionIsOpen":"Z promocji mogą skorzystać wszyscy użytkownicy, którzy zarejestrowali się w kasynie 4 kwietnia przed godziną 23:59.",
     "onceThePromotionStarts":"Po rozpoczęciu promocji nowi uczestnicy nie będą już przyjmowani.",
     "inOrderToParticipateIn":"Aby wziąć udział w promocji, gracze muszą postawić co najmniej jeden zakład kasynowy lub sportowy.",
-    "missingOneDayOf":"Opuszczenie jednego dnia obstawiania skutkuje eliminacją gracza z promocji.",
     "theSystemTimeisInGMT":"Czas systemowy jest podany w GMT. W związku z tym kwalifikujące się zakłady muszą być postawione pomiędzy 00:00:01 GMT a 23:59:59 GMT, aby zostać uwzględnionymi w promocji.",
     "atTheEndOfEachMonth":"Pod koniec każdego miesiąca wszyscy pozostający na pokładzie gracze wezmą udział w loterii, w której do wygrania będzie iPhone 14.",
     "theBigPrizeIsA2021":"Nagrodą główną jest Lamborghini Huracan z 2021 roku lub ekwiwalent pieniężny.",
@@ -28,7 +27,7 @@
     "seconds":"Sekundy",
     "playNow":"Zagraj",
     "promotionStartsIn":"Promocja zaczyna się za",
-    "casinolyIsOperated":"FEZbet to kasyno obsługiwane przez Buton Group, działające na podstawie licencji Curacao o numerze 8048/JAZ",
-    "weUnderstandThatAnything":"We understand that anything can happen so there will be a Joker day - a player can skip one day (Joker day) of playing and still be in the game. ",
-    "thisEssentiallyMeans":"This essentially means that missing more than 1 day of betting will lead to elimination from the promotion. No need to announce Joker day in advance, nor after the fact - we will automatically factor it in. "
+    "casinolyIsOperated":"FezBet to kasyno obsługiwane przez Buton Group, działające na podstawie licencji Curacao o numerze 8048/JAZ",
+    "weUnderstandThatAnything":"Rozumiemy, że wszystko może się zdarzyć, więc wprowadzamy Dzień Jokera – gracz może pominąć jeden dzień (Dzień Jokera) gry i wciąż w niej pozostać.",
+    "thisEssentiallyMeans":" Oznacza to, że pominięcie więcej niż jednego dnia zakładów spowoduje eliminację z promocji. Nie ma potrzeby informowania o Dniu Jokera z wyprzedzeniem ani po fakcie – uwzględnimy go automatycznie."
 }

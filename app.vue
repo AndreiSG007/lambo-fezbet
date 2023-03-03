@@ -135,27 +135,29 @@
           <div class="modal">
             <h2>{{ $t("termsAndConditions") }}</h2>
             <p>1.{{ $t("thePromotionStarts") }}</p>
-            <p>2.{{ $t("onceThePromotionStarts") }}</p>
-            <p>3.{{ $t("inOrderToParticipateIn") }}</p>
-            <p>4.{{ $t("missingOneDayOf") }}</p>
-            <p>5.{{ $t("atTheEndOfEachMonth") }}</p>
-            <p>6.{{ $t("theBigPrizeIsA2021") }}</p>
-            <p>7.{{ $t("theWinningPlayerShould") }}</p>
-            <p>8.{{ $t("importTaxesAnd") }}</p>
-            <p>9.{{ $t("ifThePromotionReaches") }}</p>
-            <p>10.{{ $t("theCurrencyEquivalentOf") }}</p>
-            <p>11.{{ $t("aPlayerCanWinTheIphone") }}</p>
-            <p>12.{{ $t("theMinimunAcumulated") }}</p>
-            <p>13.{{ $t("weUnderstandThatAnything") }}</p>
-            <p>14.{{ $t("thisEssentiallyMeans") }}</p>
+            <p>2.{{ $t("thePromotionIsOpen") }}</p>
+            <p>3.{{ $t("onceThePromotionStarts") }}</p>
+            <p>4.{{ $t("inOrderToParticipateIn") }}</p>
+            <p>5.{{ $t("theSystemTimeisInGMT") }}</p>
+            <p>6.{{ $t("atTheEndOfEachMonth") }}</p>
+            <p>7.{{ $t("theBigPrizeIsA2021") }}</p>
+            <p>8.{{ $t("theWinningPlayerShould") }}</p>
+            <p>9.{{ $t("importTaxesAnd") }}</p>
+            <p>10.{{ $t("ifThePromotionReaches") }}</p>
+            <p>11.{{ $t("theCurrencyEquivalentOf") }}</p>
+            <p>12.{{ $t("theSiteGeneral") }}</p>
+            <p>13.{{ $t("aPlayerCanWinTheIphone") }}</p>
+            <p>14.{{ $t("theMinimunAcumulated") }}</p>
+            <p>15.{{ $t("weUnderstandThatAnything") }}</p>
+            <p>16.{{ $t("thisEssentiallyMeans") }}</p>
             <div class="close">
-              <button @click="showModal = false">X</button>
+              <button @click="closeModal">X</button>
             </div>
           </div>
         </div>
 
         <footer>
-          <button @click="showModal = true">
+          <button @click="openModal">
             <u>{{ $t("termsAndConditions") }}</u>
           </button>
           <p>
@@ -191,6 +193,15 @@ export default defineComponent({
     const showModal = ref(false);
     const mySwiper = ref();
 
+    const openModal = () => {
+      showModal.value = true;
+      document.body.style.overflow = "hidden";
+    };
+
+    const closeModal = () => {
+      showModal.value = false;
+      document.body.style.overflow = "auto";
+    };
     const breakpoints = {
       600: {
         slidesPerView: 3,
@@ -236,6 +247,8 @@ export default defineComponent({
       Controller,
       controlledSwiper,
       setControlledSwiper,
+      openModal,
+      closeModal,
     };
   },
 });

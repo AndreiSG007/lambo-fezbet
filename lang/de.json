@@ -10,7 +10,6 @@
     "thePromotionIsOpen":"Die Promotion steht allen Nutzern offen, die sich vor dem 04.April, 23:59 Uhr, im Casino registriert haben.",
     "onceThePromotionStarts":"Sobald die Promotion beginnt, werden keine neuen Teilnehmer mehr zugelassen.",
     "inOrderToParticipateIn":"Um an der Promotion teilnehmen zu können, müssen Sie mindestens einen Einsatz im Casino oder bei den Sportwetten tätigen.",
-    "missingOneDayOf":"Das Versäumen eines Einsatzes an einem Tag führt zum Ausschluss des Spielers von der Promotion.",
     "theSystemTimeisInGMT":"Die Systemzeit wird in GMT angegeben. Daher müssen die qualifizierenden Einsätze zwischen 00:00:01 Uhr GMT und 23:59:59 Uhr GMT getätigt werden, um an der Promotion teilnehmen zu können.",
     "atTheEndOfEachMonth":"Am Ende jedes Monats nehmen alle verbleibenden Spieler an einer Verlosung teil, bei der es ein iPhone 14 zu gewinnen gibt.",
     "theBigPrizeIsA2021":"Der große Preis ist ein 2021 Lamborghini Huracan oder der entsprechende Gegenwert in bar.",
@@ -28,7 +27,7 @@
     "seconds":"Sekunden",
     "playNow":"Jetzt spielen",
     "promotionStartsIn":"Die Aktion beginnt in",
-    "casinolyIsOperated":"FEZbet wird von der Buton Group betrieben und ist unter der Lizenz Nr. 8048/JAZ von Curaçao tätig",
-    "weUnderstandThatAnything":"We understand that anything can happen so there will be a Joker day - a player can skip one day (Joker day) of playing and still be in the game. ",
-    "thisEssentiallyMeans":"This essentially means that missing more than 1 day of betting will lead to elimination from the promotion. No need to announce Joker day in advance, nor after the fact - we will automatically factor it in. "
+    "casinolyIsOperated":"FezBet wird von der Buton Group betrieben und ist unter der Lizenz Nr. 8048/JAZ von Curaçao tätig",
+    "weUnderstandThatAnything":"Wir wissen, dass alles passieren kann, deshalb wird es einen Joker-Tag geben – ein Spieler kann einen Tag (Joker-Tag) auslassen und trotzdem im Spiel bleiben. ",
+    "thisEssentiallyMeans":"Das bedeutet im Wesentlichen, dass das mehr als 1 Tag ohne Einsatz zum Ausschluss aus der Promotion führt. Sie müssen den Joker-Tag weder im Voraus noch im Nachhinein ankündigen – wir werden ihn automatisch berücksichtigen."
 }
