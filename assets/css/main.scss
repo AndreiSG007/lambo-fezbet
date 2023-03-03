@@ -514,17 +514,25 @@ footer
 //modal
 
 .modal-overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 2vh; /* Location of the box */
   left: 0;
-  right: 0;
-  background-color: #000000da;
-  z-index: 3;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #000000da; /* Fallback color */
+ z-index: 4;
+}
+
+@media  screen and (min-height:800px) {
+
+  .modal-overlay {
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
-  overflow: hidden;
+  }
 }
 
 .modal {
@@ -534,8 +542,21 @@ footer
   max-width: 360px;
   padding: 60px 0;
   border-radius: 20px;
-overflow: hidden;
+  margin-inline:auto ;
   position: relative;
+  margin-bottom: 10px;
+  max-height: 650px;
+  overflow: auto;
+
+  @include mq(600px)
+  {
+    max-height: 750px;
+  }
+
+  @include mq(2000px)
+  {
+    max-height: 950px;
+  }
 }
 .close {
   margin: 10% 0 0 16px;
