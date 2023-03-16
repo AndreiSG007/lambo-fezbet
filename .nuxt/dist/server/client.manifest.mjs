@@ -1,1 +1,0 @@
-export { default } from "file:///Users/andreisoftgenius/Documents/LAMBO/lambo-promo-Fezbet/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
