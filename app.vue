@@ -1,7 +1,7 @@
 <template>
   <div class="main-container">
     <div class="main-wrapper">
-      <nuxt-img
+      <img
         src="/assets/Logo_Fez.svg"
         alt=""
         class="main-logo"
@@ -60,7 +60,7 @@
         <button class="main-button">{{ $t("playNow") }}</button>
       </a>
       <div>
-        <nuxt-img
+        <img
           src="/assets/header_group_Fez.png"
           format="webp"
           alt=""
@@ -72,15 +72,15 @@
         <h2 class="steps-title">{{ $t("howToWIN") }}</h2>
         <div class="steps-container">
           <div class="step">
-            <nuxt-img src="/assets/1.svg" alt="" class="step-image" />
+            <img src="/assets/1.svg" alt="" class="step-image" />
             <h2>{{ $t("placeAtLeast") }}</h2>
           </div>
           <div class="step">
-            <nuxt-img src="/assets/2.svg" alt="" class="step-image" />
+            <img src="/assets/2.svg" alt="" class="step-image" />
             <h2>{{ $t("keepDoingThatUntil") }}</h2>
           </div>
           <div class="step">
-            <nuxt-img src="/assets/3.svg" alt="" class="step-image" />
+            <img src="/assets/3.svg" alt="" class="step-image" />
             <h2>{{ $t("hopOnThisAmazingLambo") }}</h2>
           </div>
         </div>
@@ -112,15 +112,15 @@
               class="pic swiper-container-1"
               @click="() => showImg(index)"
             >
-              <nuxt-img :src="src" format="webp" />
+              <img :src="src" format="webp" />
             </swiper-slide>
           </swiper>
           <div class="arrows-container">
             <button @click="controlledSwiper.slidePrev()">
-              <nuxt-img src="/assets/left-arrow.svg" />
+              <img src="/assets/left-arrow.svg" />
             </button>
             <button @click="controlledSwiper.slideNext()">
-              <nuxt-img src="/assets/right-arrow.svg" />
+              <img src="/assets/right-arrow.svg" />
             </button>
           </div>
         </div>
@@ -216,16 +216,16 @@ export default defineComponent({
     const now = new Date().getTime();
     const newYear = new Date("April 5, 2023 15:37:25").getTime();
     const imgs = [
-      "/assets/poze/a0.jpg",
-      "/assets/poze/a1.jpg",
-      "/assets/poze/a2.jpg",
-      "/assets/poze/a3.jpg",
-      "/assets/poze/a4.jpg",
-      "/assets/poze/a5.jpg",
-      "/assets/poze/a6.jpg",
-      "/assets/poze/a7.jpg",
-      "/assets/poze/a8.jpg",
-      "/assets/poze/a9.jpg",
+      "/mateadmin/fezbet/assets/poze/a0.jpg",
+      "/mateadmin/fezbet/assets/poze/a1.jpg",
+      "/mateadmin/fezbet/assets/poze/a2.jpg",
+      "/mateadmin/fezbet/assets/poze/a3.jpg",
+      "/mateadmin/fezbet/assets/poze/a4.jpg",
+      "/mateadmin/fezbet/assets/poze/a5.jpg",
+      "/mateadmin/fezbet/assets/poze/a6.jpg",
+      "/mateadmin/fezbet/assets/poze/a7.jpg",
+      "/mateadmin/fezbet/assets/poze/a8.jpg",
+      "/mateadmin/fezbet/assets/poze/a9.jpg",
     ];
     const showImg = (index) => {
       indexRef.value = index;

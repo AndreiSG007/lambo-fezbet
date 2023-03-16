@@ -2,21 +2,17 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: "Landing page",
-      link: [
-        { rel: "icon", type: "image/*", href: "/favicon.ico" },
-        {
-          rel: "stylesheet",
-          href: "https://use.typekit.net/xom8nwh.css",
-        },
-      ],
+      title: "Lambo Promo - Fezbet",
+      link: [{ rel: "icon", type: "image/*", href: "/favicon.ico" }],
     },
+    baseURL: '/mateadmin/fezbet/',
   },
   css: [
     // SCSS file in the project
     "~/assets/css/main.scss",
   ],
   modules: ["@nuxtjs/i18n", "@nuxt/image-edge"],
+  buildModules: ["@nuxtjs/google-fonts"],
   i18n: {
     strategy: "prefix_except_default",
     locales: [
@@ -45,4 +41,13 @@ export default defineNuxtConfig({
     detectBrowserLanguage: false,
     langDir: "lang",
   },
+  googleFonts: {
+    families: {
+      Oswald: [400, 500, 700],
+    },
+    display: "swap",
+  },
+  generate: {
+    routes: ['/', '/de', '/it', '/pl', '/fi']
+  }
 });
