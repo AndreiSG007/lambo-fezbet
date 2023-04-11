@@ -56,7 +56,7 @@
           </vue-countdown>
         </no-ssr>
       </div>
-      <a target="_blank" :href="casinoUrl">
+      <a target="_blank" :href="casinoUrl" id="play-now">
         <button class="main-button">{{ $t("playNow") }}</button>
       </a>
       <div>
