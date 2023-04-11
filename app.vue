@@ -56,9 +56,9 @@
           </vue-countdown>
         </no-ssr>
       </div>
-      <a target="_blank" :href="casinoUrl" id="play-now">
+      <div @click="casinoUrl" click="" id="play-now">
         <button class="main-button">{{ $t("playNow") }}</button>
-      </a>
+      </div>
       <div>
         <img
           src="/assets/header_group_Fez.png"
@@ -235,14 +235,14 @@ export default defineComponent({
     const onHide = () => (visibleRef.value = false);
 
     const route = useRoute();
-    const casinoUrl = computed(() => {
+    const casinoUrl = () => {
       let url = 'https://fezbet.com/en';
       if (route.query.btag) {
         url += `?btag=${route.query.btag}`;
       }
       console.log(url);
-      return url;
-    });
+      window.open(url, '_blank');  
+    };
 
     return {
       visibleRef,
