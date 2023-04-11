@@ -240,7 +240,7 @@ export default defineComponent({
       if (route.query.btag) {
         url += `?btag=${route.query.btag}`;
       }
-      
+      console.log(url);
       return url;
     });
 
