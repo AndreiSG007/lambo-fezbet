@@ -56,7 +56,7 @@
           </vue-countdown>
         </no-ssr>
       </div>
-      <div @click="casinoUrl" click="" id="play-now">
+      <div @click="casinoRedirect">
         <button class="main-button">{{ $t("playNow") }}</button>
       </div>
       <div>
@@ -235,13 +235,12 @@ export default defineComponent({
     const onHide = () => (visibleRef.value = false);
 
     const route = useRoute();
-    const casinoUrl = () => {
+    const casinoRedirect = () => {
       let url = 'https://fezbet.com/en';
       if (route.query.btag) {
         url += `?btag=${route.query.btag}`;
       }
-      console.log(url);
-      window.open(url, '_blank');  
+      window.open(url, '_blank');
     };
 
     return {
@@ -259,7 +258,7 @@ export default defineComponent({
       setControlledSwiper,
       openModal,
       closeModal,
-      casinoUrl,
+      casinoRedirect,
     };
   },
 });
