@@ -9,6 +9,12 @@ export default defineNuxtConfig({
     },
     baseURL: '/mateadmin/fezbet/',
   },
+  runtimeConfig: {
+      public: {
+          google_analytics_id: 'G-VEY0WK983H',
+          production_mode: isProduction
+      }
+  },
   css: [
     // SCSS file in the project
     "~/assets/css/main.scss",
