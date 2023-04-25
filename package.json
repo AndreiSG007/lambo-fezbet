@@ -12,6 +12,7 @@
     "@nuxt/image-edge": "^1.0.0-27954023.4cee565",
     "@nuxtjs/google-fonts": "^2.0.0",
     "@nuxtjs/i18n": "^8.0.0-beta.10",
+    "consola": "^3.1.0",
     "nuxt": "^3.2.2",
     "sass": "^1.58.3",
     "sass-loader": "^13.2.0",

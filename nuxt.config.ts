@@ -5,15 +5,21 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "Lambo Promo - Fezbet",
-      link: [{ rel: "icon", type: "image/*", href: "/favicon.ico" }],
+      link: [
+        { rel: "icon", type: "image/*", href: "/favicon.ico" },
+        {
+          rel: "stylesheet",
+          href: "https://use.typekit.net/xom8nwh.css",
+        },
+      ],
     },
-    baseURL: '/mateadmin/fezbet/',
+    baseURL: "/mateadmin/fezbet/",
   },
   runtimeConfig: {
-      public: {
-          google_analytics_id: 'G-VEY0WK983H',
-          production_mode: isProduction
-      }
+    public: {
+      google_analytics_id: "G-VEY0WK983H",
+      production_mode: isProduction,
+    },
   },
   css: [
     // SCSS file in the project
@@ -56,6 +62,6 @@ export default defineNuxtConfig({
     display: "swap",
   },
   generate: {
-    routes: ['/', '/de', '/it', '/pl', '/fi']
-  }
+    routes: ["/", "/de", "/it", "/pl", "/fi"],
+  },
 });
