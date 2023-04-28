@@ -96,6 +96,7 @@ a {
   &-logo {
     width: 120px;
     height: 24px;
+    z-index: 2;
 
     @include mq(600px)
     {
@@ -228,7 +229,7 @@ a {
   @include mq(600px)
   {
     transform: scale(1.5);
-    margin-top: -130px;
+    margin-top: -200px;
   
   }
 
@@ -240,7 +241,7 @@ a {
   @include mq(1024px)
   {
     transform: scale(1.2);
-    margin-top: -235px;
+    margin-top: -290px;
     
   }
 
@@ -250,6 +251,8 @@ a {
     transform: scale(1);
   }
 }
+
+
 .steps {
   margin-top: 100px;
   text-align: center;

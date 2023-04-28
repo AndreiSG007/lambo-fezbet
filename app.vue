@@ -1,61 +1,12 @@
 <template>
   <div class="main-container">
     <div class="main-wrapper">
-      <img
-        src="/assets/Logo_Fez.svg"
-        alt=""
-        class="main-logo"
-        w="190"
-        h="36"
-      />
+      <img src="/assets/Logo_Fez.svg" alt="" class="main-logo" w="190" h="36" />
       <div class="main-texts">
         <h2>{{ $t("lastManStanding") }}</h2>
         <h1>{{ $t("lamborghiniHuracan") }}</h1>
       </div>
-      <div class="counter-container">
-        <h3>{{ $t("promotionStartsIn") }}</h3>
-        <no-ssr>
-          <vue-countdown
-            :time="time"
-            v-slot="{ days, hours, minutes, seconds }"
-          >
-            <div class="counter-container_labels">
-              <div class="counter-container_labels-container">
-                <p class="counter-container_labels-container-number day">
-                  {{ days }}
-                </p>
-                <p class="counter-container_labels-container-text">
-                  {{ $t("days") }}
-                </p>
-              </div>
-              <div class="counter-container_labels-container">
-                <p class="counter-container_labels-container-number hour">
-                  {{ hours }}
-                </p>
-                <p class="counter-container_labels-container-text">
-                  {{ $t("hours") }}
-                </p>
-              </div>
-              <div class="counter-container_labels-container">
-                <p class="counter-container_labels-container-number minute">
-                  {{ minutes }}
-                </p>
-                <p class="counter-container_labels-container-text">
-                  {{ $t("minutes") }}
-                </p>
-              </div>
-              <div class="counter-container_labels-container">
-                <p class="counter-container_labels-container-number seconds">
-                  {{ seconds }}
-                </p>
-                <p class="counter-container_labels-container-text">
-                  {{ $t("seconds") }}
-                </p>
-              </div>
-            </div>
-          </vue-countdown>
-        </no-ssr>
-      </div>
+
       <div @click="casinoRedirect">
         <button class="main-button">{{ $t("playNow") }}</button>
       </div>
@@ -236,11 +187,11 @@ export default defineComponent({
 
     const route = useRoute();
     const casinoRedirect = () => {
-      let url = 'https://fezbet.com/en';
+      let url = "https://fezbet.com/en";
       if (route.query.btag) {
         url += `?btag=${route.query.btag}`;
       }
-      window.open(url, '_blank');
+      window.open(url, "_blank");
     };
 
     return {
