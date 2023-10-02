@@ -592,3 +592,97 @@ footer
 
 }
 
+
+/**
+Players Component
+*/
+.players {
+  margin: 0 20px 100px 20px ;
+  text-align: center;
+  @include mq(600px) {
+    width: 554px;
+    margin-top: 16px;
+  }
+  @include mq(1024px) {
+    width: auto;
+    margin-top: 36px;
+  }
+  @include mq(1530px) {
+    margin-bottom: 120px;
+  }
+  &__title {
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      font-size: 24px;
+      font-weight: 900;
+      &--mobile {
+        display: block;
+        @include mq(1024px) {
+          display: none;
+        }
+      }
+      &--desktop {
+        display: none;
+        @include mq(1024px) {
+          display: block;
+        }
+      }
+      @include mq(600px){
+        margin-bottom: 24px;
+      }
+      @include mq(1024px) {
+        font-size: 40px;
+        margin-bottom: 32px;
+      }
+  }
+  &__wrapper {
+      text-align: center;
+      background-color: #1A1A1A;
+      border-radius: 16px;
+      padding: 32px 30px 24px 30px;
+      @include mq(600px) {
+        padding: 32px 0 48px 0;
+      }
+      @include mq(1024px) {
+        padding: 34px 68px 40px 68px;
+      }
+      @include mq(1560px) {
+        padding: 40px 68px;
+      }
+  }
+  &__subtitle {
+      color: #818181;
+      font-size: 12px;
+      font-weight: 700;
+      margin: 0;
+      margin-bottom: 18px;
+      display: none;
+      @include mq(1024px) {
+        display: block;
+      }
+  }
+  &__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px 32px;
+      margin: 0 auto;
+      @include mq(600px) {
+        max-width: 260px;
+      }
+      @include mq(1024px) {
+        grid-template-columns: 1fr 1fr;
+        max-width: none;
+      }
+      &-item {
+          text-align: left;
+          width: 100%;
+          background-color: #2C2C2C;
+          border-radius: 8px;
+          padding: 10px 16px;
+          font-size: 14px;
+          @include mq(1024px) {
+            width: 260px;
+          }
+      }
+  }
+}
