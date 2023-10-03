@@ -686,3 +686,22 @@ Players Component
       }
   }
 }
+
+.hero {
+  position: relative;
+  &__social {
+    position: absolute;
+    right: 0;
+    text-align: center;
+    & img {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto;
+    }
+    & p {
+      font-size: 16px;
+      width: 150px;
+      margin-top: -16px;
+    }
+  }
+}
