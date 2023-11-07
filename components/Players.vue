@@ -13,5 +13,16 @@
     </div>
 </template>
 <script lang="ts" setup>
-    const players = ["j@pov.com", "hen@hki.com", "sma@tigra.com", "nat@hafae.com", "j@pov.com", "hen@hki.com", "sma@tigra.com", "nat@hafae.com", "j@pov.com", "hen@hki.com"];
+    const players = [
+        "BOC*****",
+        "ORT*****",
+        "DAN*****",
+        "MAL*****",
+        "LUK*****",
+        "TES*****",
+        "PRO*****",
+        "SUS*****",
+        "060*****",
+        "OEC*****",
+    ];
 </script>
