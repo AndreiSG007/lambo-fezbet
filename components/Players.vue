@@ -14,15 +14,14 @@
 </template>
 <script lang="ts" setup>
     const players = [
-        "BOC*****",
-        "ORT*****",
-        "DAN*****",
-        "MAL*****",
-        "LUK*****",
-        "TES*****",
-        "PRO*****",
-        "SUS*****",
         "060*****",
         "OEC*****",
+        "BOC*****",
+        "ORT*****",
+        "PRO*****",
+        "DAN*****",
+        "LUK*****",
+        "TES*****",
+        "MAL*****",
     ];
 </script>
